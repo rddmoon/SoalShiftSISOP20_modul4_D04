@@ -51,6 +51,7 @@ Agar nantinya pencatatan lebih rapi dan terstruktur, log akan dibagi menjadi beb
 Untuk log level WARNING, merupakan pencatatan log untuk syscall rmdir dan unlink.
 Sisanya, akan dicatat dengan level INFO.
 Format untuk logging yaitu:
+
 ```[LEVEL]::[yy][mm][dd]-[HH]:[MM]:[SS]::[CMD]::[DESC ...]```
 
 LEVEL    : Level logging
