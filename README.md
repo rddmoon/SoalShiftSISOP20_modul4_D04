@@ -155,3 +155,31 @@ int main(int argc, char *argv[]){
 }
 ```
 Bagian tersebut merupakan main
+
+Compile:
+``` 
+gcc -Wall `pkg-config fuse --cflags` /home/yaniarpe/modul4/ssfs.c -o ssfs `pkg-config fuse --libs`
+```
+Run Program:
+```
+./ssfs /home/yaniarpe/fusee/
+```
+
+## Hasil
+Isi pada direktori "Documents":
+![rncvdoc](https://user-images.githubusercontent.com/61228737/80864927-29b3bf80-8cb0-11ea-9ac4-a00904dd9b10.png)
+![isiencvdoc](https://user-images.githubusercontent.com/61228737/80864942-418b4380-8cb0-11ea-8284-bd5cf92936ee.png)
+Isi pada direktori "fusee":
+![encvfusee](https://user-images.githubusercontent.com/61228737/80864962-5c5db800-8cb0-11ea-8ee8-746b40affe40.png)
+![isiencvfusee](https://user-images.githubusercontent.com/61228737/80864964-5e277b80-8cb0-11ea-8aa1-073f597d2e24.png)
+Jika direktori "encv1_soal" di-rename menjadi "soal"
+![renamedoc](https://user-images.githubusercontent.com/61228737/80865002-9d55cc80-8cb0-11ea-88c6-4b8d29bbccca.png)
+Isi pada direktori "fusee" menjadi:
+![renamefusee](https://user-images.githubusercontent.com/61228737/80865021-c37b6c80-8cb0-11ea-8f27-747baccc3126.png)
+![dekripfusee](https://user-images.githubusercontent.com/61228737/80865026-c70ef380-8cb0-11ea-8fa8-09198c250cbb.png)
+Coba melakukan delete file:
+![deletebshex](https://user-images.githubusercontent.com/61228737/80865314-b0699c00-8cb2-11ea-94e0-e2f7ae64fbf8.png)
+
+
+Hasil pada fs.log:
+![fslog](https://user-images.githubusercontent.com/61228737/80865298-93cd6400-8cb2-11ea-8ebb-9d2b2b540c2d.png)
