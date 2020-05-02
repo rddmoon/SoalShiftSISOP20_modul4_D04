@@ -201,6 +201,7 @@ static int xmp_mkdir(const char *path, mode_t mode){
     return 0;
 }
 
+//Remove a directory
 static int xmp_rmdir(const char *path)
 {
 	  int res;
@@ -299,11 +300,11 @@ static struct fuse_operations xmp_oper =
 	.getattr	= xmp_getattr,
 	.readdir	= xmp_readdir,
 	.mkdir		= xmp_mkdir,
-  .rmdir		= xmp_rmdir,
+  	.rmdir		= xmp_rmdir,
 	.rename		= xmp_rename,
-	.read		  = xmp_read,
-  .write		= xmp_write,
-  .unlink		= xmp_unlink,
+	.read		= xmp_read,
+  	.write		= xmp_write,
+  	.unlink		= xmp_unlink,
 };
 
 int main(int argc, char *argv[]){
